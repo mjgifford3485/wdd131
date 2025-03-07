@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Sour Gummy", sans-serif;
+}
+
+p {
+    font-family: "Tinos", serif;
+    font-weight: 400;
+}
+
+header {
+    background-color: #01295F;
+    color: #E64D0B;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+nav {
+    background-color: #424141;
+    border: 1px solid #01295F;
+    margin: 0 auto;
+    max-width: 1 800px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    flex: 1 1 100%;
+}
+
+nav a {
+    display: block;
+    color: #dadad9;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline wavy;
+    color: #E64D0B;
+}
+
+
+body {
+    background-color: #dadad9;
+    display: grid;
+
+}
+
+section h2 {
+    background-color: #01295F;
+    background: #dadad9;
+}
+
+footer {
+    background-color: #01295F;
+    color: #E64D0B;
+    text-align: center;
+    margin-top: 10px;
+}
+
+main {
+    display: grid;
+    grid-template: auto / 3fr 1fr;
+    width: 100%;
+}
+
+.card1 {
+    grid-column: 1 / 2;
+    text-align: center;
+    border: 2px solid #01295F;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.card1 h2 {
+    background-color: #01295F;
+    color: #dadad9;
+}
+
+.card1 div {
+    padding: 20px;
+    text-align: left;
+    color: #E64D0B;
+    margin: 10px;
+}
+
+.profile img {
+    float: right;
+    margin: 10px;
+}
+
+.flag h3 {
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #01295F;
+    margin-bottom: 10px;
+    margin-left: 120px;
+    width: 65%;
+}
+
+.flag img {
+    float: left;
+    margin: 10px;
+}
+
+.card2 {
+    grid-column: 2 / 3;
+    border: 2px solid #01295F;
+    text-align: center;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.card2 h2 {
+    background-color: #01295F;
+    color: #dadad9;
+}
+
+.card2 div {
+    padding: 20px;
+}
+
+.card2 ul {
+    text-align: left;
+    list-style-type: disc;
+    text-decoration: underline;
+    padding-left: 30px;
+    padding-top: 100px;
+    color: #01295F;
+}
