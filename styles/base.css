@@ -131,11 +131,26 @@ main {
     padding: 20px;
 }
 
-.card2 ul {
+.card2 nav a {
     text-align: left;
     list-style-type: disc;
     text-decoration: underline;
-    padding-left: 30px;
-    padding-top: 100px;
     color: #01295F;
+}
+
+.card2 nav {
+    background-color: #dadad9;
+
+}
+
+.card2 nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card2 nav ul li {
+    margin: 0px;
+    padding: 0px;
 }
