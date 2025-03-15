@@ -4,11 +4,15 @@
     box-sizing: border-box;
 }
 
-h1,
+h1 {
+    font-family: "Sour Gummy", sans-serif;
+    color: #E64D0B;
+}
+
 h2,
 h3 {
     font-family: "Sour Gummy", sans-serif;
-    color: #E64D0B;
+    color: #01295F;
 }
 
 p {
