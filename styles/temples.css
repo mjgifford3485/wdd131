@@ -4,14 +4,10 @@
     box-sizing: border-box;
 }
 
-h1 {
-    font-family: "Sour Gummy", sans-serif;
-    color: #E64D0B;
-}
-
+h1,
 h2 {
     font-family: "Sour Gummy", sans-serif;
-    color: #01295F;
+    color: #E64D0B;
 }
 
 p {
@@ -20,7 +16,7 @@ p {
 }
 
 header {
-    background-color: #01295F;
+    background-color: #dadad9;
     color: #E64D0B;
     text-align: center;
     margin-bottom: 10px;
@@ -66,7 +62,7 @@ nav {
     padding: 1rem;
     text-align: center;
     text-decoration: none;
-    color: #E64D0B;
+    color: #dadad9;
 }
 
 nav ul li {
