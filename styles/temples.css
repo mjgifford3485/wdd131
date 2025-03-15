@@ -47,7 +47,7 @@ nav {
 }
 
 #menu.open::before {
-    content: "Close";
+    content: "X";
     color: #E64D0B;
 }
 
