@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Matthew Gifford</title>
+    <meta name="author" content="Matthew Gifford">
+    <meta name="description" content="WDD131 Dynamic Web Fundementals Matthew Gifford Information page about Japan">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Zen+Antique&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Japan</h1>
+    </header>
+    <main>
+        <picture class="japan">
+            <source srcset="images/japan-large.webp" media="(min-width: 450px)" width="auto" height="auto">
+            <img src="images/japan.webp" alt="Japan" width="450" height="auto">
+        </picture>
+        <div class="data">
+            <h2>Data</h2>
+            <ul>
+                <li>Area: 377,975 square km</li>
+                <li>Population: 124.5 million</li>
+                <li>Capital: Tokyo</li>
+                <li>Languages: Japanese</li>
+                <li>Currency: Yen</li>
+                <li>Internet TLD: .jp</li>
+            </ul>
+        </div>
+        <div class="weather">
+            <h2>Weather</h2>
+            <img src="images/rainy.svg" height="50px" width="auto">
+            <ul>
+                <li>Temperature: <span id="getTemp">9</span>°C</li>
+                <li>Conditions: Rainy</li>
+                <li>Wind Speed: <span id="getSpeed">5.4</span>km/h</li>
+                <li>Wind Chill: <span id="result"></span></li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <p>© <span id="currentyear"></span> ⭐ Matthew Gifford ⭐ Washington</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
