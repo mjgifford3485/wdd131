@@ -12,6 +12,7 @@
     }
 
     .data h2 {
+        max-width: 80%;
         text-align: left;
         background-color: var(--primary-color);
         color: var(--secondary-color);
@@ -24,6 +25,7 @@
     }
 
     .weather h2 {
+        max-width: 80%;
         text-align: left;
         background-color: var(--primary-color);
         color: var(--secondary-color);
@@ -33,12 +35,11 @@
     }
 
     .weather h2::after {
-        
+        content: "🌧️";
+        padding-left: 20px;
     }
 
     .weather img {
-        width: 50px;
-        height: auto;
-        margin-right: 10px;
+        display: none;
     }
 }
