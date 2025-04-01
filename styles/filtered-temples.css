@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2 {
+    font-family: "Sour Gummy", sans-serif;
+    color: #01295F;
+}
+
+p {
+    font-family: "Tinos", serif;
+    font-weight: 400;
+}
+
+
+
+header {
+    background-color: #dadad9;
+    color: #E64D0B;
+    text-align: center;
+    margin-bottom: 10px;
+    max-width: 2560px;
+}
+
+nav {
+    background-color: #424141;
+    border: 1px solid #01295F;
+    margin: 0 auto;
+    max-width: 2560px;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+#menu::before {
+    content: "☰";
+    color: #E64D0B;
+}
+
+#menu.open::before {
+    content: "X";
+    color: #E64D0B;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #dadad9;
+}
+
+nav ul li {
+    flex: 1 1 100%;
+    list-style-type: none;
+    border: 1px solid #01295F;
+}
+
+.navigation a:hover {
+    background-color: #E64D0B;
+    color: #01295F;
+    font-weight: 700;
+    text-decoration: underline wavy;
+}
+
+.open a {
+    display: block;
+}
+
+.active {
+    background-color: #01295F;
+    color: #01295F;
+}
+
+main {
+    text-align: center;
+    max-width: 2560px;
+}
+
+body {
+    background-color: #dadad9;
+}
+
+section {
+    margin: 1rem auto;
+    max-width: 2560px;
+    padding: .5rem;
+}
+
+
+
+img {
+    width: 100%;
+    height: auto;
+    margin: .5rem;
+    border: 1px solid black;
+}
+
+figcaption {
+    padding-bottom: 10px;
+    color: #01295F;
+}
+
+footer {
+    background-color: #01295F;
+    color: #dadad9;
+    text-align: center;
+    margin-top: 10px;
+    max-width: 2560px;
+}
+
+.temples {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.temple-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.temple-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.temple-card h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #E64D0B;
+    background-color: #0b0236;
+}
+
+.temple-card p {
+    font-size: 0.9em;
+    color: #01295F;
+}
