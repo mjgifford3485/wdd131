@@ -1,0 +1,52 @@
+:root {
+    --header-color: #fb0a26;
+    --paragaph-color: #46ebeb;
+    --background-color: #000;
+    --header-font: "Lavishly Yours", cursive;
+    --paragraph-font: "Orbitron", sans-serif;
+}
+
+header {
+    padding: .5rem 2%;
+    font-size: 4rem;
+    background-color: var(--background-color);
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+
+main {
+    background-color: var(--background-color);
+    text-align: center;
+    width: 100%;
+    max-width: 450px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+h1 {
+    font-family: var(--header-font);
+    color: var(--header-color);
+    font-size: 2rem;
+}
+
+h2 {
+    font-family: var(--header-font);
+    color: var(--header-color);
+}
+
+p {
+    font-family: var(--paragaph-color);
+    color: var(--paragaph-color);
+}
+
+footer {
+    background-color: var(--background-color);
+    color: var(--paragaph-color);
+    font-family: var(--paragraph-font);
+    text-align: center;
+    width: 100%;
+    max-width: 450px;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD131 - Dynamic Web Fundamentals - Matthew Gifford</title>
+    <meta name="description" content="Product review form with a confirmation page.">
+    <meta name="author" content="Matthew Gifford">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Orbitron:wght@400..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html">
+            <fieldset>
+                <div>
+                    <legend>Product Name</legend>
+                    <label>
+                        <select name="product" required>
+                            <option value="" disabled selected>Choose a product...</option>
+                        </select>
+                    </label>
+                    <div>
+                        <legend class="rating">Overall Rating</legend>
+                    </div>
+                </div>
+                <div class="stars">
+                    <input type="radio" name="stars" id="fivestar" value="5" required><label for="fivestar"></label>
+                    <input type="radio" name="stars" id="fourstar" value="4" required><label for="fourstar"></label>
+                    <input type="radio" name="stars" id="threestar" value="3" required><label for="threestar"></label>
+                    <input type="radio" name="stars" id="twostar" value="2" required><label for="twostar"></label>
+                    <input type="radio" name="stars" id="onestar" value="1" required><label for="onestar"></label>
+                </div>
+                <div>
+                    <legend>Date of Installation</legend>
+                    <label class="date"><input type="date" name="installationdate" required></label>
+                </div>
+                <div class="features">
+                    <legend>Which features did you find useful in the product? (Check all that apply)</legend>
+                    <label><input type="checkbox" name="features" value="yes">Durability</label>
+                    <label><input type="checkbox" name="features" value="yes">Ease of Use</label>
+                    <label><input type="checkbox" name="features" value="yes">Performance</label>
+                    <label><input type="checkbox" name="features" value="yes">Design</label>
+                </div>
+                <div>
+                    <legend class="review">Written Review (Optional)</legend>
+                    <textarea id="review" name="review" rows="4" cols="50"></textarea>
+                </div>
+                <div>
+                    <legend class="name">Your Name (Optional)</legend>
+                    <label><input type="text" name="name"></label>
+                </div>
+                <input type="submit" value="Post Review">
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>© <span id="currentyear"></span> ⭐ Matthew Gifford ⭐ Washington</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
