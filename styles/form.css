@@ -24,7 +24,7 @@ fieldset {
 }
 
 header,
-legend {
+h2 {
     font-family: var(--header-font);
     color: var(--header-color);
     font-size: 2rem;

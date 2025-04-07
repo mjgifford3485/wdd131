@@ -23,14 +23,14 @@
         <form method="get" action="review.html">
             <fieldset>
                 <div>
-                    <legend>Product Name</legend>
+                    <h2>Product Name</h2>
                     <label>
                         <select name="product" required>
                             <option value="" disabled selected>Choose a product...</option>
                         </select>
                     </label>
                     <div>
-                        <legend class="rating">Overall Rating</legend>
+                        <h2 class="rating">Overall Rating</h2>
                     </div>
                 </div>
                 <div class="stars">
@@ -41,22 +41,22 @@
                     <input type="radio" name="stars" id="onestar" value="1" required><label for="onestar"></label>
                 </div>
                 <div>
-                    <legend>Date of Installation</legend>
+                    <h2>Date of Installation</h2>
                     <label class="date"><input type="date" name="installationdate" required></label>
                 </div>
                 <div class="features">
-                    <legend>Which features did you find useful in the product? (Check all that apply)</legend>
+                    <h2>Which features did you find useful in the product? (Check all that apply)</h2>
                     <label><input type="checkbox" name="features" value="yes">Durability</label>
                     <label><input type="checkbox" name="features" value="yes">Ease of Use</label>
                     <label><input type="checkbox" name="features" value="yes">Performance</label>
                     <label><input type="checkbox" name="features" value="yes">Design</label>
                 </div>
                 <div>
-                    <legend class="review">Written Review (Optional)</legend>
+                    <h2 class="review">Written Review (Optional)</h2>
                     <textarea id="review" name="review" rows="4" cols="50"></textarea>
                 </div>
                 <div>
-                    <legend class="name">Your Name (Optional)</legend>
+                    <h2 class="name">Your Name (Optional)</h2>
                     <label><input type="text" name="name"></label>
                 </div>
                 <input type="submit" value="Post Review">
