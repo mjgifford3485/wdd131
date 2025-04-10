@@ -1,0 +1,48 @@
+:root {
+    --header-color: #fb0a26;
+    --paragaph-color: #46ebeb;
+    --background-color: #000;
+    --header-font: "Lavishly Yours", cursive;
+    --paragraph-font: "Orbitron", sans-serif;
+}
+
+* {
+    background-color: var(--background-color);
+    max-width: 800px;
+}
+
+h1, h2, h3 {
+    font-family: var(--header-font);
+    color: var(--header-color);
+}
+
+p {
+    font-family: var(--paragraph-font);
+    color: var(--paragaph-color);
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.navigation:link {
+    color: var(--paragaph-color);
+    font-family: var(--paragraph-font);
+}
+
+.navigation:visited {
+    color: var(--header-color);
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer {
+    text-align: center;
+}
