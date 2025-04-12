@@ -12,15 +12,18 @@
         rel="stylesheet">
     <link rel="stylesheet" href="styles/ttrpg.css">
     <link rel="stylesheet" href="styles/ttrpg-large.css">
-    <script src="scripts/ttrpg.js" defer></script>
+    <script src="scripts/more-info.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>More Info</h1>
+        <div class="logo">
+            <h1>More Info</h1>
+            <img src="images/book-and-quill.webp" alt="book-and-quill" loading="lazy">
+        </div>
         <nav>
             <ul class="navigation">
                 <li><a href="index.html" title="Home">Home</a></li>
-                <li><a href="dandd.html" title="Dungeons and Dragons">Dungeons and Dragons</a></li>
+                <li><a href="dnd.html" title="Dungeons and Dragons">Dungeons and Dragons</a></li>
                 <li><a href="cpr.html" title="Cyberpunk RED">Cyberpunk RED</a></li>
                 <li><a href="vampire.html" title="Vampire: The Masquerade">Vampire: The Masquerade</a></li>
                 <li><a href="#" title="More Info" class="active">More Info</a></li>
@@ -28,7 +31,42 @@
         </nav>
     </header>
     <main>
-
+        <h1>Resources</h1>
+        <p>In order to play, you are going to need dice, books, and other players</p>
+        <p></p>
+        <div class="diceRoller">
+            <h2>Dice Roller</h2>
+            <p>Dice are an essential part of any tabletop roleplaying game.  Most people have a 6 sided die or two laying around, but tabletop roleplaying games require all different sizes.  You can buy dice from any gaming store or online, but if you want to try out a game without spending money feel free to use the dice roller below.  In the first box below, type in the number of dice you want to roll and in the second box the size of the dice.</p>
+            <div class="dice">
+                <label for="numDice"></label>
+                <input type="number" id="numDice" value="1" min="1">
+                <label for="diceSize">d</label>
+                <input type="number" id="diceSize" value="6" min="2">
+                <button id="roll">Roll Dice</button>
+            </div>
+            <div class="result">
+                <h2>Result</h2>
+                <p id="result"></p>
+            </div>
+        </div>
+        <h2>Books</h2>
+        <p>Physical copies of books can be founr online or in any gaming or bookstore.  The best resource for purchasing digital books is drivethrurpg.com.</p>
+        <div class="pictures">
+            <figure>
+                <img src="images/dnd-players-handbook.webp" alt="dnd players handbook" loading="lazy">
+                <figcaption>Dungeons and Dragons Handbook</figcaption>
+            </figure>
+            <figure>
+                <img src="images/cpr-handbook.webp" alt="cpr handbook" loading="lazy">
+                <figcaption>Cyberpunk RED Handbook</figcaption>
+            </figure>
+            <figure>
+                <img src="images/vampire-handbook.webp" alt="vampire handbook" loading="lazy">
+                <figcaption>Vampire: the Masquerade Handbook</figcaption>
+            </figure>
+        </div>
+        <h2>Other Players</h2>
+        <p>Thanks to modern technology, it is possible to find games and play with others online using websites such as roll20.net or demiplane.com.</p>
     </main>
     <footer>
         <p>© <span id="currentyear"></span> ⭐ Matthew Gifford ⭐ Washington</p>

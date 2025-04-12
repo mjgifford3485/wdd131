@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD131 - Dynamic Web Fundamentals - Matthew Gifford</title>
+    <meta name="author" content="Matthew Gifford">
+    <meta name="description" content="A webpage designed to describe table top roleplaying games.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Orbitron:wght@400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/ttrpg.css">
+    <link rel="stylesheet" href="styles/ttrpg-large.css">
+    <script src="scripts/ttrpg.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1></h1>
+            <img src="images/dungeons-dragons-seeklogo.webp" alt="Dungeons and Dragons logo" loading="lazy">
+            <img src="images/d20.webp" alt="D20 logo" loading="lazy">
+        </div>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="#" title="Dungeons and Dragons" class="active">Dungeons and Dragons</a></li>
+                <li><a href="cpr.html" title="Cyberpunk RED">Cyberpunk RED</a></li>
+                <li><a href="vampire.html" title="Vampire: The Masquerade">Vampire: The Masquerade</a></li>
+                <li><a href="more-info.html" title="More Info">More Info</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>The system</h2>
+        <p>Dungeons and Dragons is a d20 based system, meaning that most checks use a 20 sided die.  Dungeons and Dragons is midieval fantasy setting with multiple races, such as elves and dwarves, and it has magic.</p>
+        <p></p>
+        <form method="get" action="dnd-character.html">
+            <fieldset>
+                <legend>Character Sheet</legend>
+                <h2 class="charname">Character Name</h2>
+                <input type="text" name="charname">
+                <label><h2>Class</h2>
+                    <select name="class">
+                            <option value="">Please Select a Class ⚔</option>
+                            <option value="barbarian">Barbarian</option>
+                            <option value="bard">Bard</option>
+                            <option value="cleric">Cleric</option>
+                            <option value="druid">Druid</option>
+                            <option value="figher">Fighter</option>
+                            <option value="monk">Monk</option>
+                            <option value="paladin">Paladin</option>
+                            <option value="ranger">Ranger</option>
+                            <option value="rogue">Rogue</option>
+                            <option value="sorcerer">Sorcerer</option>
+                            <option value="warlock">Warlock</option>
+                            <option value="wizard">Wizard</option>
+                    </select>
+                    <h2>Race</h2
+                    <div class="race">
+                        <label><input type="radio" name="race" value="Dwarf">Dwarf</label>
+                        <label><input type="radio" name="race" value="hafling">Halfling</label>
+                        <label><input type="radio" name="race" value="elf">Elf</label>
+                        <label><input type="radio" name="race" value="human">Human</label>
+                    </div>
+                </label>
+                <h2>Attributes</h2>
+                <div class="attributes">
+                    <div class="strength">
+                        <label>Strength: </label>
+                        <div id="strength-roll"><input type="number"></div>
+                        <button id="generate-strength">Roll Strength</button>
+                    </div>
+                    <div class="dexterity">
+                        <label>Dexterity: </label>
+                        <div id="dexterity-roll"><input type="number"></div>
+                        <button id="generate-dexterity">Roll Dexterity</button>
+                    </div>
+                    <div class="constitution">
+                        <label>Constitution: </label>
+                        <div id="constitution-roll"><input type="number"></div>
+                        <button id="generate-constitution">Roll Constitution</button>
+                    </div>
+                    <div class="intelligence">
+                        <label>Intelligence: </label>
+                        <div id="intelligence-roll"><input type="number"></div>
+                        <button id="generate-intelligence">Roll Intelligence</button>
+                    </div>
+                    <div class="wisdom">
+                        <label>Wisdom: </label>
+                        <div id="wisdom-roll"><input type="number"></div>
+                        <button id="generate-wisdom">Roll Wisdom</button>
+                    </div>
+                    <div class="charisma">
+                        <label>Charisma: </label>
+                        <div id="charisma-roll"><input type="number"></div>
+                        <button id="generate-charisma">Roll Charisma</button>
+                    </div>
+                </div>
+                <input type="submit" value="Create Character">
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>© <span id="currentyear"></span> ⭐ Matthew Gifford ⭐ Washington</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+        <a href="credits.html" title="credits">Credits</a>
+    </footer>
+</body>
+</html>

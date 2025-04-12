@@ -8,17 +8,36 @@
 
 * {
     background-color: var(--background-color);
-    max-width: 800px;
+    max-width: 1000px;
 }
 
-h1, h2, h3 {
+
+h1,
+h2,
+h3,
+legend {
     font-family: var(--header-font);
     color: var(--header-color);
 }
 
-p {
+legend {
+    font-size: 2.5rem;
+}
+
+p,
+label,
+select,
+option {
     font-family: var(--paragraph-font);
     color: var(--paragaph-color);
+    display: block;
+}
+
+input[type="text"] {
+    font-family: var(--paragraph-font);
+    color: var(--background-color);
+    background-color: var(--paragaph-color);
+    max-width: 200px;
 }
 
 .navigation {
@@ -26,21 +45,142 @@ p {
     flex-direction: column;
     justify-content: space-evenly;
     list-style: none;
+    padding: 15px;
 }
 
-.navigation:link {
+a:link {
     color: var(--paragaph-color);
     font-family: var(--paragraph-font);
 }
 
-.navigation:visited {
+a:visited {
+    color: var(--paragaph-color);
+}
+
+a:hover {
     color: var(--header-color);
+    font-family: var(--header-font);
+    font-size: 1.5rem;
+}
+
+.active::after {
+    content: "🎲";
 }
 
 .logo {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    
+}
+
+.logo img {
+    background-color: var(--header-color);
+    width: 100%;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+fieldset h2 {
+    text-align: left;
+    padding-top: 50px;
+}
+
+.race {
+    display: block;
+}
+
+.charname {
+    padding-top: 0px;
+}
+
+.attributes button,
+.diceRoller button {
+    color: var(--background-color);
+    background-color: var(--paragaph-color);
+    font-family: var(--paragraph-font);
+    font-size: 1.0rem;
+}
+
+.diceRoller {
+    display: flex;
+    flex-direction: column;
+}
+
+.strength,
+.dexterity,
+.constitution,
+.intelligence,
+.wisdom,
+.charisma {
+        display: flex;
+        flex-direction: row;
+        max-width: 350px;
+        padding-right: 20px;
+}
+
+#strength-roll,
+#dexterity-roll,
+#constitution-roll,
+#intelligence-roll,
+#wisdom-roll,
+#charisma-roll {
+    color: var(--paragaph-color);
+    font-family: var(--paragraph-font);
+    border: 2px solid var(--header-color);
+    height: 25px;
+    max-width: 25px;
+    padding: 5px;
+}
+
+.stats input[type="number"],
+.vamp-attributes input[type="number"],
+.attributes input[type="number"],
+.dice input[type="number"] {
+    height: 25px;
+    width: 50px;
+    color: var(--background-color);
+    background-color: var(--paragaph-color);
+    font-family: var(--paragraph-font);
+}
+
+.dice {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.result,
+.pictures {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#result {
+    color: var(--paragaph-color);
+    font-family: var(--paragraph-font);
+    border: 1px solid var(--header-color);
+    max-width: 200px;
+    display: block;
+    text-align: center;
+}
+
+input[type="submit"] {
+    border: none;
+    background-color: var(--header-color);
+    color: var(--paragaph-color);
+    font-family: var(--paragraph-font);
+    width: 96%;
+    max-width: 400px;
+    height: 25px;
+    margin-top: 20px;
 }
 
 footer {

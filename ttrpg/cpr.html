@@ -16,11 +16,14 @@
 </head>
 <body>
     <header>
-        <h1>Cyberpunk RED</h1>
+        <div class="logo">
+            <h1>Cyberpunk RED</h1>
+            <img src="images/cpr.webp" alt="cyberpunk red logo">
+        </div>
         <nav>
             <ul class="navigation">
                 <li><a href="index.html" title="Home">Home</a></li>
-                <li><a href="dandd.html" title="Dungeons and Dragons">Dungeons and Dragons</a></li>
+                <li><a href="dnd.html" title="Dungeons and Dragons">Dungeons and Dragons</a></li>
                 <li><a href="#" title="Cyberpunk RED" class="active">Cyberpunk RED</a></li>
                 <li><a href="vampire.html" title="Vampire: The Masquerade">Vampire: The Masquerade</a></li>
                 <li><a href="more-info.html" title="More Info">More Info</a></li>
@@ -28,7 +31,55 @@
         </nav>
     </header>
     <main>
-
+        <h2>The system</h2>
+        <p>Cyberpunk RED is a d10 system, which means it most checks are done using a 10 sided die.  It is set in a dystopian future where most people have cybernetic implants.</p>
+        <form method="get" action="cpr-character.html">
+            <fieldset>
+                <legend>Character Sheet</legend>
+                <h2 class="charname">Character Name</h2>
+                <input type="text" name="charname">
+                <label>
+                    <h2>Role</h2>
+                    <select name="class">
+                        <option value="">Please Select a Role 🔫</option>
+                        <option value="exec">Exec</option>
+                        <option value="fixer">Fixer</option>
+                        <option value="lawman">Lawman</option>
+                        <option value="media">Media</option>
+                        <option value="medtech">Medtech</option>
+                        <option value="netrunner">Netrunner</option>
+                        <option value="nomad">Nomad</option>
+                        <option value="rockerboy">Rockerboy</option>
+                        <option value="solo">Solo</option>
+                        <option value="tech">Tech</option>
+                    </select>
+                </label>
+                <h2>Stats</h2>
+                <div class="stats">
+                    <label>Intelligence: </label>
+                    <input type="number" name="intelligence">
+                    <label>Reflexes: </label>
+                    <input type="number" name="reflexes">
+                    <label>Dexterity: </label>
+                    <input type="number" name="dexterity">
+                    <label>Tech: </label>
+                    <input type="number" name="tech">
+                    <label>Cool: </label>
+                    <input type="number" name="cool">
+                    <label>Will: </label>
+                    <input type="number" name="will">
+                    <label>Luck: </label>
+                    <input type="number" name="luck">
+                    <label>Move: </label>
+                    <input type="number" name="move">
+                    <label>Body: </label>
+                    <input type="number" name="body">
+                    <label>Empathy: </label>
+                    <input type="number" name="empathy">
+                </div>
+                <input type="submit" value="Create Character">
+            </fieldset>
+        </form>
     </main>
     <footer>
         <p>© <span id="currentyear"></span> ⭐ Matthew Gifford ⭐ Washington</p>

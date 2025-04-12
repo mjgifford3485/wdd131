@@ -16,19 +16,66 @@
 </head>
 <body>
     <header>
-        <h1>Vampire: The Masquerade</h1>
+        <div class="logo">
+            <h1>Vampire: The Masquerade</h1>
+            <img src="images/vampire.webp" alt="vampire logo">
+        </div>
         <nav>
             <ul class="navigation">
                 <li><a href="index.html" title="Home">Home</a></li>
-                <li><a href="dandd.html" title="Dungeons and Dragons">Dungeons and Dragons</a></li>
+                <li><a href="dnd.html" title="Dungeons and Dragons">Dungeons and Dragons</a></li>
                 <li><a href="cpr.html" title="Cyberpunk RED">Cyberpunk RED</a></li>
                 <li><a href="#" title="Vampire: The Masquerade" class="active">Vampire: The Masquerade</a></li>
                 <li><a href="more-info.html" title="More Info">More Info</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-
+        <h2>The system</h2>
+        <p>Vampire: the Masquerade is a d10 based system, meaning that most checks use a 10 sided die.  Vampire is a dark, modern setting game centered around Vampires and the occult.</p>
+        <form method="get" action="vampire-character.html">
+            <fieldset>
+                <legend>Character Sheet</legend>
+                <h2 class="charname">Character Name</h2>
+                <input type="text" name="charname">
+                <label>
+                    <h2>Clan</h2>
+                    <select name="class">
+                        <option value="">Please Select a Clan 🧛🏼</option>
+                        <option value="brujah">Brujah</option>
+                        <option value="toreador">Toreador</option>
+                        <option value="gangrel">Gangrel</option>
+                        <option value="lasombra">Lasombra</option>
+                        <option value="malkavian">Malkavian</option>
+                        <option value="ravnos">Ravnos</option>
+                        <option value="salubri">Salubri</option>
+                        <option value="tremere">Tremere</option>
+                        <option value="ventrue">Ventrue</option>
+                    </select>
+                </label>
+                <h2>Attributes</h2>
+                <div class="vamp-attributes">
+                    <label>Strength: </label>
+                    <input type="number" name="strength">
+                    <label>Dexterity: </label>
+                    <input type="number" name="dexterity">
+                    <label>Stamina: </label>
+                    <input type="number" name="stamina">
+                    <label>Charisma: </label>
+                    <input type="number" name="charisma">
+                    <label>Manipulation: </label>
+                    <input type="number" name="manipulation">
+                    <label>Composure: </label>
+                    <input type="number" name="composure">
+                    <label>Intelligence: </label>
+                    <input type="number" name="intelligence">
+                    <label>Wits: </label>
+                    <input type="number" name="wits">
+                    <label>Resolve: </label>
+                    <input type="number" name="resolve">
+                </div>
+                <input type="submit" value="Create Character">
+            </fieldset>
+        </form>
     </main>
     <footer>
         <p>© <span id="currentyear"></span> ⭐ Matthew Gifford ⭐ Washington</p>
