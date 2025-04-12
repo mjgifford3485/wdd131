@@ -31,6 +31,7 @@ option {
     font-family: var(--paragraph-font);
     color: var(--paragaph-color);
     display: block;
+    text-align: center;
 }
 
 input[type="text"] {
@@ -84,12 +85,15 @@ a:hover {
 fieldset {
     display: flex;
     flex-direction: column;
-    
 }
 
 fieldset h2 {
     text-align: left;
     padding-top: 50px;
+}
+
+fieldset label {
+    text-align: left;
 }
 
 .race {
@@ -181,6 +185,12 @@ input[type="submit"] {
     max-width: 400px;
     height: 25px;
     margin-top: 20px;
+}
+
+figcaption {
+    color: var(--paragaph-color);
+    font-family: var(--paragraph-font);
+    text-align: center;
 }
 
 footer {
